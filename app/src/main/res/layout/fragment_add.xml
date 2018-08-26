@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ADDFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+    <!-- TODO: Update blank fragment layout -->
+    <!--<de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgStudent"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="154dp"
+        android:src="@drawable/ic_person_black_24dp" />-->
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name"
+/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/txtName"
+        android:id="@+id/edtName"
+        android:inputType="text"
+        android:hint="Name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtAddress"
+        android:text="Address"
+        android:layout_below="@+id/edtName" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/txtAddress"
+        android:id="@+id/edtAddress"
+        android:hint="Address" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtPhone"
+        android:text="Phone"
+        android:layout_below="@+id/edtAddress" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/txtPhone"
+        android:id="@+id/edtPhone"
+        android:hint="Phone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtCourse"
+        android:layout_below="@id/edtPhone"
+        android:text="Course" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/txtCourse"
+            android:id="@+id/edtCourse"
+            android:hint="Course" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtBranch"
+        android:layout_below="@id/edtCourse"
+        android:text="Branch" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/txtBranch"
+            android:id="@+id/edtBranch"
+            android:hint="Branch" />
+
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/edtBranch"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Save" />
+
+    </RelativeLayout>
+</ScrollView>
